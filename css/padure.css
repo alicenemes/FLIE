@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Fin message */
+#successMessage {
+	color: white;
+	position: absolute;
+	left: 580px;
+	top: 250px;
+	width: 0;
+	height: 0;
+	z-index: 100;
+	background: #fac752;
+	border: 0px solid rgb(180,180,180);
+	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 34px 20px;
+}
+#button {
+	margin:5px;
+	font-size: 1.24em;
+	padding: 20px;
+	background: rgb(10,10,10);
+	color: white;
+	min-width:100px;
+	min-height: 40px;
+}
+
+#tutMessage {
+	color: white;
+	position: absolute;
+	left: 1580px;
+	top: 250px;
+	width: 0;
+	height: 0;
+	z-index: 9000;
+	background: #fac752;
+	border: 0px solid rgb(180,180,180);
+	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+}
+
+#tutMessage img {
+	width: 100%;
+	min-height: 100%;
+}
+
+#tutButton {
+	margin:5px;
+	font-size: 1.84em;
+	padding: 24px;
+	background: rgb(10,10,10);
+	color: white;
+	min-width:120px;
+	min-height: 50px;
+	position: absolute;
+	z-index: 9900;
+	bottom: 50px;
+}
+
+@media screen and (max-width: 530px) {
+	
+	#container_back {
+		padding: 2px 2px;
+		max-height: 250px;
+	}
+	#cardSlots {padding:2px;}
+	#cardPile {margin:0; margin-top:10px; padding:0; width: 100%; max-height:210px;}
+	
+	#hint {
+	top: 3px;
+	right: 4px;
+	padding: 6px 2px 2px 2px;
+	width: 60px;
+	height: 60px;
+	}
+	
+	#hint img {width:30px;}
+	
+	.wideBox h1 {font-size: 2.2em; }
+	.overBox {max-height: 4.4vh;}
+	
+	img {max-width:82px; margin: 0;}
+	
+	#cardSlots div, #cardPile div {
+		line-height:10px;
+		padding: 0;
+		max-width: 19vw;
+		max-height: 82px;
+		min-width: 82px;
+		min-height: 82px;
+		height: auto;
+		font-size: 1em;
+		margin-top: 12px;
+	}
+	#cardSlots div {padding-top:20px; margin: 10px 1px;}
+	body {
+		background: url('../img/padure/bg_res.jpg');
+		background-size:cover;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	img {max-width:70px; margin: 0;}
+	#cardSlots div, #cardPile div {
+		padding: 0;
+		max-width: 19vw;
+		min-width: 70px;
+		min-height: 70px;
+	}
+	#cardPile {max-height:180px;margin-top:0px;}
+}
